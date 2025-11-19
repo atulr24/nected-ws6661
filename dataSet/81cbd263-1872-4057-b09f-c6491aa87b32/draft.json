@@ -3,26 +3,32 @@
  "category": "dataSet",
  "data": {
   "createdAt": "2025-11-19T10:26:45.273Z",
-  "updatedAt": "2025-11-19T10:29:50.758232Z",
+  "updatedAt": "2025-11-19T10:37:17.285871Z",
   "isDeleted": false,
-  "publishedAt": "2025-11-19T10:29:50.746Z",
-  "testedAt": "2025-11-19T10:29:27.578Z",
+  "publishedAt": "2025-11-19T10:37:17.27Z",
+  "testedAt": "2025-11-19T10:37:12.241Z",
   "entityId": "81cbd263-1872-4057-b09f-c6491aa87b32",
   "name": "Untitled",
-  "commitId": "commit-47d31403-09ca-4281-9cae-86c03f5c82ea",
+  "commitId": "commit-b76bd6d1-c41e-47db-9a01-196aacf6bde5",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
   "commitInfo": {
-   "title": "Forked from 0.20",
-   "description": "v3",
-   "timeStamp": "2025-11-19T10:29:50.745Z"
+   "title": "Forked from 0.30",
+   "description": "v1",
+   "timeStamp": "2025-11-19T10:37:17.269Z"
   },
   "fields": {
+   "name": {
+    "ColumnName": "name",
+    "DataType": "string",
+    "Order": 6,
+    "ExecutedValue": "email@email.com"
+   },
    "text": {
     "ColumnName": "text",
     "DataType": "json",
-    "Order": 5,
+    "Order": 1,
     "ExecutedValue": {
      "$cond": {
       "else": "NegativeReview",
@@ -39,48 +45,42 @@
    "email": {
     "ColumnName": "email",
     "DataType": "string",
-    "Order": 3,
+    "Order": 7,
     "ExecutedValue": "john.doe@example.com"
    },
    "Integer": {
     "ColumnName": "Integer",
     "DataType": "string",
-    "Order": 7,
+    "Order": 3,
     "ExecutedValue": "100"
    },
    "movie_id": {
     "ColumnName": "movie_id",
     "DataType": "objectid",
-    "Order": 4,
+    "Order": 8,
     "ExecutedValue": "573a1391f29313caabcd7da6"
    },
    "_id": {
     "ColumnName": "_id",
     "DataType": "objectid",
-    "Order": 1,
+    "Order": 5,
     "ExecutedValue": "5a9427648b0beebeb6957b51"
    },
    "Bool": {
     "ColumnName": "Bool",
     "DataType": "boolean",
-    "Order": 8,
+    "Order": 4,
     "ExecutedValue": false
    },
    "date": {
     "ColumnName": "date",
     "DataType": "dateTime",
-    "Order": 6,
-    "ExecutedValue": "2025-11-01T05:49:56Z"
-   },
-   "name": {
-    "ColumnName": "name",
-    "DataType": "string",
     "Order": 2,
-    "ExecutedValue": "email@email.com"
+    "ExecutedValue": "2025-11-01T05:49:56Z"
    }
   },
   "query": "db.comments.find({\"name\":\"email@email.com\"})",
-  "version": "0.30",
+  "version": "0.10",
   "connectorId": "9834da26-bc7f-492e-9c05-a295e1d349ff",
   "isDemo": false,
   "settings": {
