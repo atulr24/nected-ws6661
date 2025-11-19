@@ -4,20 +4,20 @@
  "live": true,
  "data": {
   "createdAt": "2025-11-19T10:30:07.157Z",
-  "updatedAt": "2025-11-19T10:30:49.764Z",
+  "updatedAt": "2025-11-19T10:37:56.085Z",
   "isDeleted": false,
-  "testedAt": "2025-11-19T10:30:36.167Z",
-  "publishedAt": "2025-11-19T10:30:49.758Z",
+  "testedAt": "2025-11-19T10:37:47.981Z",
+  "publishedAt": "2025-11-19T10:37:56.077Z",
   "entityId": "97f3f793-6e17-46c0-b226-d8f5f6ab5274",
   "name": "Rule1",
-  "commitId": "commit-c81d9bd9-316a-4414-bc4b-24ddafbff624",
+  "commitId": "commit-d478c9d7-c101-44bc-8c50-1605e2dd271e",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
   "commitInfo": {
-   "title": "Created at 2025-11-19 10:30:07",
-   "description": "v1",
-   "timeStamp": "2025-11-19T10:30:49.755Z"
+   "title": "Forked from 0.10",
+   "description": "v2",
+   "timeStamp": "2025-11-19T10:37:56.076Z"
   },
   "customInput": {
    "name": {
@@ -52,6 +52,21 @@
   },
   "conditions": {
    "nodes": {
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    },
+    "rhs_32EDG6": {
+     "sourceType": "dataSet",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    },
     "rule_01": {
      "operator": "and",
      "nodeType": "group",
@@ -72,21 +87,6 @@
      "rightNode": [
       "rhs_32EDG6"
      ],
-     "siblingIndex": 1
-    },
-    "rule_03": {
-     "sourceType": "customInput",
-     "dataType": "string",
-     "nodeType": "params",
-     "attribute": "name",
-     "siblingIndex": 1
-    },
-    "rhs_32EDG6": {
-     "sourceType": "dataSet",
-     "dataType": "string",
-     "nodeType": "params",
-     "attribute": "name",
-     "parent": "rule_02",
      "siblingIndex": 1
     }
    }
@@ -109,7 +109,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": ""
+     "Unit": "d"
     },
     "CacheKeys": ""
    },
@@ -121,17 +121,17 @@
  },
  "dependencies": [
   {
-   "entityCommitId": "commit-c81d9bd9-316a-4414-bc4b-24ddafbff624",
+   "entityCommitId": "commit-d478c9d7-c101-44bc-8c50-1605e2dd271e",
    "entityType": "rule",
    "entityId": "97f3f793-6e17-46c0-b226-d8f5f6ab5274",
    "entityVersion": "0.10",
    "entityNodeId": "dataSet",
    "dependencyType": "dataSet",
    "dependencyId": "81cbd263-1872-4057-b09f-c6491aa87b32",
-   "dependencyVersion": "0.10",
+   "dependencyVersion": "live",
    "isDeleted": false,
-   "createdAt": "2025-11-19T10:30:33.938614Z",
-   "updatedAt": "2025-11-19T10:30:49.762115Z"
+   "createdAt": "2025-11-19T10:37:39.20645Z",
+   "updatedAt": "2025-11-19T10:37:56.082059Z"
   }
  ]
 }

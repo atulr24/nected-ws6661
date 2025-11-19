@@ -4,22 +4,39 @@
  "live": true,
  "data": {
   "createdAt": "2025-11-19T10:26:45.273Z",
-  "updatedAt": "2025-11-19T10:26:56.592Z",
+  "updatedAt": "2025-11-19T10:37:17.281Z",
   "isDeleted": false,
-  "publishedAt": "2025-11-19T10:26:56.58Z",
-  "testedAt": "2025-11-19T10:26:47.478Z",
+  "publishedAt": "2025-11-19T10:37:17.27Z",
+  "testedAt": "2025-11-19T10:37:12.241Z",
   "entityId": "81cbd263-1872-4057-b09f-c6491aa87b32",
   "name": "Untitled",
-  "commitId": "commit-e5b61289-ebd2-4663-92cb-c1dde5dfa0ed",
+  "commitId": "commit-bd0c45ff-ddb9-4dd7-9c35-782e384f9c27",
   "status": "published",
   "lastVersion": "draft",
-  "isLive": false,
+  "isLive": true,
   "commitInfo": {
-   "title": "title",
+   "title": "Forked from 0.30",
    "description": "v1",
-   "timeStamp": "2025-11-19T10:26:56.577Z"
+   "timeStamp": "2025-11-19T10:37:17.269Z"
   },
   "fields": {
+   "text": {
+    "ColumnName": "text",
+    "DataType": "json",
+    "Order": 1,
+    "ExecutedValue": {
+     "$cond": {
+      "if": {
+       "$eq": [
+        "$Bool",
+        true
+       ]
+      },
+      "else": "NegativeReview",
+      "then": "PositiveReview"
+     }
+    }
+   },
    "email": {
     "ColumnName": "email",
     "DataType": "string",
@@ -61,26 +78,9 @@
     "DataType": "string",
     "Order": 6,
     "ExecutedValue": "email@email.com"
-   },
-   "text": {
-    "ColumnName": "text",
-    "DataType": "json",
-    "Order": 1,
-    "ExecutedValue": {
-     "$cond": {
-      "if": {
-       "$eq": [
-        "$Bool",
-        true
-       ]
-      },
-      "else": "NegativeReview",
-      "then": "PositiveReview"
-     }
-    }
    }
   },
-  "query": "db.comments.find({})",
+  "query": "db.comments.find({\"name\":\"email@email.com\"})",
   "version": "0.10",
   "connectorId": "9834da26-bc7f-492e-9c05-a295e1d349ff",
   "isDemo": false,
@@ -95,7 +95,7 @@
  },
  "dependencies": [
   {
-   "entityCommitId": "commit-e5b61289-ebd2-4663-92cb-c1dde5dfa0ed",
+   "entityCommitId": "commit-bd0c45ff-ddb9-4dd7-9c35-782e384f9c27",
    "entityType": "dataSet",
    "entityId": "81cbd263-1872-4057-b09f-c6491aa87b32",
    "entityVersion": "0.10",
@@ -104,8 +104,8 @@
    "dependencyId": "9834da26-bc7f-492e-9c05-a295e1d349ff",
    "dependencyVersion": "live",
    "isDeleted": false,
-   "createdAt": "2025-11-19T10:26:45.278321Z",
-   "updatedAt": "2025-11-19T10:26:56.587806Z"
+   "createdAt": "2025-11-19T10:37:09.738117Z",
+   "updatedAt": "2025-11-19T10:37:17.277652Z"
   }
  ]
 }
