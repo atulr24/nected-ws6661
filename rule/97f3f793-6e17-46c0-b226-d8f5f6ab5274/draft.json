@@ -1,0 +1,121 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-11-19T10:30:07.157Z",
+  "updatedAt": "2025-11-19T10:30:49.771519Z",
+  "isDeleted": false,
+  "testedAt": "2025-11-19T10:30:36.167Z",
+  "publishedAt": "2025-11-19T10:30:49.758Z",
+  "entityId": "97f3f793-6e17-46c0-b226-d8f5f6ab5274",
+  "name": "Rule1",
+  "commitId": "commit-0a2bf906-16a3-4d9c-be93-f4d0362534a0",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Created at 2025-11-19 10:30:07",
+   "description": "v1",
+   "timeStamp": "2025-11-19T10:30:49.755Z"
+  },
+  "customInput": {
+   "name": {
+    "name": "name",
+    "dataType": "string",
+    "attribute": "name",
+    "sourceType": "dataSet",
+    "executedValue": "email@email.com"
+   }
+  },
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "type": "simpleCondition"
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03"
+  },
+  "action": {
+   "then": {
+    
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_02": {
+     "value": "",
+     "operator": "eq",
+     "dataType": "string",
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [
+      "rhs_32EDG6"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    },
+    "rhs_32EDG6": {
+     "sourceType": "dataSet",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    }
+   }
+  },
+  "firstCustomInput": "name",
+  "description": "",
+  "policy": "first",
+  "version": "0.10",
+  "type": "decisionTable",
+  "dataSetId": "81cbd263-1872-4057-b09f-c6491aa87b32",
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ }
+}

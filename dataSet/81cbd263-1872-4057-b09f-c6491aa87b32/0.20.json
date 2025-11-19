@@ -1,0 +1,111 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "live": true,
+ "data": {
+  "createdAt": "2025-11-19T10:26:45.273Z",
+  "updatedAt": "2025-11-19T10:28:40.909Z",
+  "isDeleted": false,
+  "publishedAt": "2025-11-19T10:28:40.9Z",
+  "testedAt": "2025-11-19T10:28:35.884Z",
+  "entityId": "81cbd263-1872-4057-b09f-c6491aa87b32",
+  "name": "Untitled",
+  "commitId": "commit-7c4ce60c-6f2a-4204-8bf8-bc4c9ed228f9",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Forked from 0.10",
+   "description": "v1",
+   "timeStamp": "2025-11-19T10:28:40.898Z"
+  },
+  "fields": {
+   "Bool": {
+    "ColumnName": "Bool",
+    "DataType": "boolean",
+    "Order": 1,
+    "ExecutedValue": false
+   },
+   "date": {
+    "ColumnName": "date",
+    "DataType": "dateTime",
+    "Order": 7,
+    "ExecutedValue": "2025-11-01T05:49:56Z"
+   },
+   "name": {
+    "ColumnName": "name",
+    "DataType": "string",
+    "Order": 3,
+    "ExecutedValue": "email@email.com"
+   },
+   "text": {
+    "ColumnName": "text",
+    "DataType": "json",
+    "Order": 6,
+    "ExecutedValue": {
+     "$cond": {
+      "if": {
+       "$eq": [
+        "$Bool",
+        true
+       ]
+      },
+      "else": "NegativeReview",
+      "then": "PositiveReview"
+     }
+    }
+   },
+   "email": {
+    "ColumnName": "email",
+    "DataType": "string",
+    "Order": 4,
+    "ExecutedValue": "john.doe@example.com"
+   },
+   "Integer": {
+    "ColumnName": "Integer",
+    "DataType": "string",
+    "Order": 8,
+    "ExecutedValue": "100"
+   },
+   "movie_id": {
+    "ColumnName": "movie_id",
+    "DataType": "objectid",
+    "Order": 5,
+    "ExecutedValue": "573a1391f29313caabcd7da6"
+   },
+   "_id": {
+    "ColumnName": "_id",
+    "DataType": "objectid",
+    "Order": 2,
+    "ExecutedValue": "5a9427648b0beebeb6957b51"
+   }
+  },
+  "query": "db.comments.find({\"name\":\"email@email.com\"})",
+  "version": "0.20",
+  "connectorId": "9834da26-bc7f-492e-9c05-a295e1d349ff",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-7c4ce60c-6f2a-4204-8bf8-bc4c9ed228f9",
+   "entityType": "dataSet",
+   "entityId": "81cbd263-1872-4057-b09f-c6491aa87b32",
+   "entityVersion": "0.20",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "9834da26-bc7f-492e-9c05-a295e1d349ff",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-19T10:28:34.120312Z",
+   "updatedAt": "2025-11-19T10:28:40.906034Z"
+  }
+ ]
+}
